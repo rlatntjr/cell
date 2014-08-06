@@ -1,0 +1,63 @@
+
+/*------------------------------------------------*/
+/*	Forms
+/*------------------------------------------------*/
+
+/* form */
+fieldset {
+	margin-bottom: 40px;
+}
+
+legend {
+	color: $base-font-color-dark;
+	font-size: 1.5em;
+}
+
+.form-horizontal .control-label {
+	text-align: left;
+}
+
+.form-horizontal ul.multiselect-container {
+	.radio, .checkbox {
+		min-height: initial;
+		padding-top: 0;
+	}
+}
+
+div[class*="col-"] > .form-group {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.form-control,
+.input-group .form-control {
+	@include border-radius(0);
+	@include box-shadow(none);
+}
+
+.input-group-lg {
+	> .form-control,
+	> .input-group-addon,
+	> .input-group-btn > .btn {
+		@include border-radius(0);
+	}
+} 
+
+.input-group-sm {
+	> .form-control,
+	> .input-group-addon,
+	> .input-group-btn > .btn {
+		@include border-radius(0);
+	}
+}
+
+/* erorr list */
+.parsley-error-list {
+	@include inline-block-list;
+	
+	li {
+		color: $color-danger;
+		font-size: 0.9em;
+		margin-top: 3px;
+	}
+}
